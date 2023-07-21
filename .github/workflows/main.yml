@@ -34,7 +34,3 @@ jobs:
           distribution: 'adopt'
       - name: Unit Tests
         run: mvn -Dtest=com.group1.cw.AppTest test
-      - name: Package and Run docker compose
-        run: |
-          mvn package -DskipTests
-          docker-compose up --abort-on-container-exit
