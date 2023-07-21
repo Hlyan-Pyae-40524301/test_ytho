@@ -340,6 +340,13 @@ public class App
      */
     public void printCountriesByPopulation(ArrayList<Country> country)
     {
+        // Check employees is not null
+        if (country == null)
+        {
+            System.out.println("No countries");
+            return;
+        }
+
         // Title
         System.out.println("Country Report by Highest Population to Lowest");
 
