@@ -23,4 +23,34 @@ public class AppTest
     {
         app.printCountriesByPopulation(null);
     }
+
+    @Test
+    void printCountriesTestEmpty()
+    {
+        ArrayList<Country> country = new ArrayList<Country>();
+        app.printCountriesByPopulation(country);
+    }
+
+    @Test
+    void printCountriesTestContainsNull()
+    {
+        ArrayList<Country> country = new ArrayList<Country>();
+        country.add(null);
+        app.printCountriesByPopulation(country);
+    }
+
+    @Test
+    void printCountries()
+    {
+        ArrayList<Country> country = new ArrayList<Country>();
+        Country cou = new Country();
+        cou.Code = "MMR";
+        cou.Name = "Myanmar";
+        cou.Continent = "Asia";
+        cou.Region = "Southeast Asia";
+        cou.Population = 45611000;
+        cou.Capital = "2710";
+        country.add(cou);
+        app.printCountriesByPopulation(country);
+    }
 }
