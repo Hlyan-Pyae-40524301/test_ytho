@@ -20,7 +20,7 @@ jobs:
       - name: Run docker compose
         run: docker-compose up --abort-on-container-exit
   UnitTest:
-    name: Unit Test
+    name: UnitTest
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -33,5 +33,8 @@ jobs:
           java-version: '16'
           distribution: 'adopt'
       - name: Unit Tests
-        run: mvn -X -Dtest=com.group1.cw.AppTest test
-
+        run: mvn -Dtest=com.group1.cw.AppTest test
+      - name: Package and Run docker compose
+        run: |
+          mvn package -DskipTests
+          docker-compose up --abort-on-container-exit
