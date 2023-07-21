@@ -261,32 +261,32 @@ public class App
             return null;
         }
     }
-
-    /**
-     * Display Country
-     */
-    public void displayCountry(Country cou)
-    {
-        if (cou != null)
-        {
-            System.out.println(
-                    cou.Code + " "
-                            + cou.Name + "\n"
-                            + "Continent: " + cou.Continent + "\n"
-                            + "Region: " + cou.Region + "\n"
-                            + "SurfaceArea: " + cou.SurfaceArea + "\n"
-                            + "IndepYear: " + cou.IndepYear + "\n"
-                            + "Population: " + cou.Population + "\n"
-                            + "LifeExpectancy: " + cou.LifeExpectancy + "\n"
-                            + "GNP: " + cou.GNP + "\n"
-                            + "GNPOld: " + cou.GNPOld + "\n"
-                            + "LocalName: " + cou.LocalName + "\n"
-                            + "GovernmentForm: " + cou.GovernmentForm + "\n"
-                            + "HeadOfState: " + cou.HeadOfState + "\n"
-                            + "Capital: " + cou.Capital + "\n"
-                            + "Code2: " + cou.Code2 + "\n");
-        }
-    }
+//
+//    /**
+//     * Display Country
+//     */
+//    public void displayCountry(Country cou)
+//    {
+//        if (cou != null)
+//        {
+//            System.out.println(
+//                    cou.Code + " "
+//                            + cou.Name + "\n"
+//                            + "Continent: " + cou.Continent + "\n"
+//                            + "Region: " + cou.Region + "\n"
+//                            + "SurfaceArea: " + cou.SurfaceArea + "\n"
+//                            + "IndepYear: " + cou.IndepYear + "\n"
+//                            + "Population: " + cou.Population + "\n"
+//                            + "LifeExpectancy: " + cou.LifeExpectancy + "\n"
+//                            + "GNP: " + cou.GNP + "\n"
+//                            + "GNPOld: " + cou.GNPOld + "\n"
+//                            + "LocalName: " + cou.LocalName + "\n"
+//                            + "GovernmentForm: " + cou.GovernmentForm + "\n"
+//                            + "HeadOfState: " + cou.HeadOfState + "\n"
+//                            + "Capital: " + cou.Capital + "\n"
+//                            + "Code2: " + cou.Code2 + "\n");
+//        }
+//    }
 
     /**
      * Gets all the current Country and City.

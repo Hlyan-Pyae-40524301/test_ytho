@@ -24,11 +24,11 @@ public class AppIntegrationTest
     void testGetCountry()
     {
         Country cou = app.getCountry(2710);
-        assertEquals(cou.Capital, 2710);
+        assertEquals(cou.Capital, "2710");
         assertEquals(cou.Code, "MMR");
         assertEquals(cou.Name, "Myanmar");
         assertEquals(cou.Continent, "Asia");
         assertEquals(cou.Region, "Southeast Asia");
-        assertEquals(cou.Population, "45611000");
+        assertEquals(cou.Population, 45611000);
     }
 }
