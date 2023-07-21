@@ -48,8 +48,8 @@ public class AppTest
         cou.Name = "Myanmar";
         cou.Continent = "Asia";
         cou.Region = "Southeast Asia";
-        cou.Population = 885300;
-        cou.Capital = "2711";
+        cou.Population = 45611000;
+        cou.Capital = "2710";
         country.add(cou);
         app.printCountriesByPopulation(country);
     }
